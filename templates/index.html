@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clustered Articles</title>
+    <link rel="icon" href="icons8-machine-learning-16.png" type="image/png">
+    <link rel="shortcut icon" href="icons8-machine-learning-16.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f0f8ff; /* Light blue background color */
+            margin: 20px;
+            line-height: 1.6; /* Adjust line height for better readability */
+            letter-spacing: 0.5px; /* Adjust letter spacing for better readability */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2196F3; /* Blue color for the heading */
+            font-family: 'Garamond', serif;
+            margin-bottom: 10px; /* Add margin to the bottom of the heading */
+        }
+
+        h2 {
+            color: black; /* Black color for cluster heading */
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #ccc;
+            font-size: 1.5em; /* Adjust font size as needed */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .article {
+            max-width: 400px;
+            margin: 10px;
+            background-color: white; /* White background color for the article div */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gentle box shadow */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .article:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 200px; /* Set maximum height */
+            border-radius: 6px;
+            margin-bottom: 10px;
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+        }
+
+        p {
+            color: #333; /* Adjust text color as needed */
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis; /* Display ... for overflowed text */
+            line-height: 1.2; /* Ensure consistent line height */
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff; /* Blue color for links */
+            overflow: hidden;
+            text-overflow: ellipsis; /* Display ... for overflowed text */
+            line-height: 1.2; /* Ensure consistent line height */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .article-title {
+            color: darkred;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color: #2196F3;">Tafara Kasparov Mhangami - Clustered News Articles</h1>
+    <p>Explore clusters of news articles through an informative lens. Each cluster represents a group of related articles, providing a structured way to navigate and discover content.</p>
+</header>
+
+{% for cluster, articles in clustered_articles.items() %}
+    <h2>Cluster {{ cluster + 1 }}</h2>
+    <div style="display: flex; flex-wrap: wrap;">
+        {% for index, article in enumerate(articles) %}
+            {% if article.image_url %}
+                <a href="{{ article.page_url }}" target="_blank" class="article">
+                    <p class="article-title">{{ article.title }}</p>
+                    <img src="{{ article.image_url }}" alt="{{ article.title }}">
+                    <p>{{ article.title }}</p>
+                    {% if article.description %}
+                        <p>{{ article.description }}</p>
+                    {% endif %}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endfor %}
+
+</body>
+</html>
