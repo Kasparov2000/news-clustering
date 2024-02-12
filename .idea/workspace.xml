@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e95197e-abb2-4589-a0ca-b6993eb5a2e7" name="Changes" comment="">
+    <list default="true" id="2e95197e-abb2-4589-a0ca-b6993eb5a2e7" name="Changes" comment="update 'README.md'">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -39,16 +42,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/kaspa/PycharmProjects/Data Mining Q2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kaspa\PycharmProjects\Data Mining Q2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kaspa\PycharmProjects\Data Mining Q2\static" />
       <recent name="C:\Users\kaspa\PycharmProjects\Data Mining Q2" />
@@ -106,15 +113,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707739155898</updated>
-      <workItem from="1707739158901" duration="13278000" />
+      <workItem from="1707739158901" duration="13709000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update 'README.md'" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 'README.md'" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Data_Mining_Q2$test.coverage" NAME="test Coverage Results" MODIFIED="1707762728620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Data_Mining_Q2$Data_Mining_Q2.coverage" NAME="Data Mining Q2 Coverage Results" MODIFIED="1707767022948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Data_Mining_Q2$Data_Mining_Q2.coverage" NAME="Data Mining Q2 Coverage Results" MODIFIED="1707768642487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

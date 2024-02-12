@@ -1,6 +1,3 @@
-Certainly! Here is the README in pure Markdown format:
-
-```markdown
 # News Clustering
 
 Welcome to News Clustering! This web application allows you to explore clusters of news articles through an informative lens. Each cluster represents a group of related articles, providing a structured way to navigate and discover content.
