@@ -27,7 +27,7 @@ def get_news():
 
     base_url = 'https://newsapi.org/v2/everything'
     params = {
-        'q': 'tesla',
+        'q': 'tech',
         'from': '2024-01-16',
         'sortBy': 'publishedAt',
         'apiKey': news_api_key,
